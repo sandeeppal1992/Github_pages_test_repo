@@ -11,7 +11,7 @@ __author__ = "Marius Seidl"
 from typing import TypeVar, Type
 import numpy as np
 
-from rigid_bodies.rigid_body import RigidBody
+#from rigid_bodies.rigid_body import RigidBody
 
 # composed data types
 TNum = TypeVar('TNum', int, float, np.float64)
@@ -20,4 +20,4 @@ T2Vector = tuple[TNum, TNum]
 TState = tuple[TNum, TNum, TNum, TNum, TNum, TNum]
 
 # types of class instances
-TRigidBody = Type[RigidBody]
+#TRigidBody = Type[RigidBody]

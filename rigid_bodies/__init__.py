@@ -26,4 +26,4 @@ Classes:
 
 __author__ = "Marius Seidl"
 
-__all__ = ['rigid_body']
+__all__ = ['rigid_body','test_rigid_body']

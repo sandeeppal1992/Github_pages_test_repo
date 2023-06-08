@@ -3,9 +3,11 @@
 
 import numpy as np
 
-from ..utils.typevars import TNum, TPoint, TState, TRigidBody
-from ..utils import utils
-from ..utils.errors import SimulationError
+from Github_pages_test_repo.utils.typevars import TNum, TPoint, TState#, TRigidBody
+from Github_pages_test_repo.utils import utils
+#from Github_pages_test_repo.utils.errors import SimulationError
+from Github_pages_test_repo.utils import errors
+
 
 
 class RigidBody:
@@ -39,11 +41,14 @@ class RigidBody:
 
     """
 
-    def __init__(self, 
-                 mass: TNum,
-                 moment: TNum,
-                 shape: list[TPoint, ...],
-                 initial_state: TState = (0., 0., 0., 0., 0., 0.,),
+    # def __init__(self, 
+    #              mass: TNum,
+    #              moment: TNum,
+    #              shape: list[TPoint,],# ...],
+    #              initial_state: TState = (0., 0., 0., 0., 0., 0.,),
+    #              ) -> None:
+
+    def __init__(self,
                  ) -> None:
         """
         Parameters
@@ -100,7 +105,7 @@ class RigidBody:
         pass
     
     def get_current_shape(self,
-                          ) -> list[TPoint, ...]:
+                          ) -> list[TPoint,]: #...]:
         """
         Get the body's shape at its current pose.
 
@@ -112,7 +117,7 @@ class RigidBody:
         pass
     
     def get_shape(self,
-                  ) -> list[TPoint, ...]:
+                  ) -> list[TPoint, ]:#...]:
         """
         Get the body's shape at relative to it's center of gravity.
 
@@ -285,9 +290,9 @@ class RigidBody:
         """
         pass
     
-    def intersects(self,
-                   body: TRigidBody,
-                   ) -> bool:
+    # def intersects(self,
+    #                body: TRigidBody,
+    #                ) -> bool:
         """
         Determines if the current shapes of this and another rigid body intersect.
 
@@ -322,9 +327,9 @@ class RigidBody:
         """
         pass
     
-    def in_contact(self,
-                   body: TRigidBody,
-                   ) -> bool:
+    # def in_contact(self,
+    #                body: TRigidBody,
+    #                ) -> bool:
         """
         Determines if this body's shape is in contact with another bodies shape.
         (technically if distance is float-close to 0)
@@ -341,9 +346,9 @@ class RigidBody:
         """
         pass
     
-    def get_contact_point(self,
-                          body: TRigidBody,
-                          ) -> TPoint | None:
+    # def get_contact_point(self,
+    #                       body: TRigidBody,
+    #                       ) -> TPoint | None:
         """
         Determines the contact point between this body's shape and another bodies shape, if there is any.
         (technically: the point of smallest distance, where the distance is float-close to 0)
