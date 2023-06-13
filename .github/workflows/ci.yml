@@ -34,5 +34,6 @@ jobs:
               git config --global user.name "Sandeep Pal"
               git add *.html
               git add *.xls
+              git add assets/*
               git commit -m 'Added pytest-html and excel'
               git push origin Project_stub
