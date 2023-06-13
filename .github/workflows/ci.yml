@@ -35,4 +35,4 @@ jobs:
               git add *.html
               git add *.xls
               git commit -m 'Added pytest-html and excel'
-              git push origin Project Stub
+              git push origin Project_stub
