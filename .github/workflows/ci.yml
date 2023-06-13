@@ -4,7 +4,8 @@ on:
   #    - created
   push:
     branches:
-      - Project_stub
+      - Project_stub/**
+      - trigger.txt
   pull_request:
     # Sequence of patterns matched against refs/heads
     branches:    
@@ -26,3 +27,10 @@ jobs:
               pip install -r requirements.txt
       - name: Test with pytest
         run: pytest -vv
+      - name: Commit to the reports to GitHub
+        run:  |
+              cd rigid_bodies
+              git add *.html
+              git add *.xls
+              git commit -m 'Added pytest-html and excel'
+              git push origin Project Stub
