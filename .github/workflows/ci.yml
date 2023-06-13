@@ -3,13 +3,10 @@ on:
   #  types:
   #    - created
   push:
-    types: 
-      - edited
     branches:
-      - Project_stub/**
+      - Project_stub
     paths:
-      - 'trigger.txt'
-
+      - trigger.txt
   pull_request:
     # Sequence of patterns matched against refs/heads
     branches:    
