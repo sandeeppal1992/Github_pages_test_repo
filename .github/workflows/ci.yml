@@ -30,8 +30,11 @@ jobs:
         run: pytest -vv --html=pytest_report.html --excelreport=report.xls
       - name: Commit to the reports to GitHub
         run:  |
+              pwd
+              ls
               cd rigid_bodies
               pwd
+              ls
               git add *.html
               git add *.xls
               git commit -m 'Added pytest-html and excel'
