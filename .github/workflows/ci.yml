@@ -1,0 +1,27 @@
+on:
+  #label:
+  #  types:
+  #    - created
+  push:
+    branches:
+      - Project_stub
+  pull_request:
+    # Sequence of patterns matched against refs/heads
+    branches:    
+      - Project_stub
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.9.16
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.9.16
+      - name: Install dependencies
+        run:  |
+              python -m pip install --upgrade pip
+              pip install -r requirements.txt
+      - name: Test with pytest
+        run: pytest -vv
