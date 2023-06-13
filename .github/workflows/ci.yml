@@ -30,6 +30,8 @@ jobs:
         run: pytest -vv --html=pytest_report.html --excelreport=report.xls
       - name: Commit to the reports to GitHub
         run:  |
+              git config --global user.email "build@rigidbody.com"
+              git config --global user.name "Sandeep Pal"
               git add *.html
               git add *.xls
               git commit -m 'Added pytest-html and excel'
