@@ -31,6 +31,7 @@ jobs:
       - name: Commit to the reports to GitHub
         run:  |
               cd rigid_bodies
+              pwd
               git add *.html
               git add *.xls
               git commit -m 'Added pytest-html and excel'
