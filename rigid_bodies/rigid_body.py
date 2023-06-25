@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import numpy as np
+#from ..utils.typevars import TNum, TPoint, TState
 
 from Github_pages_test_repo.utils.typevars import TNum, TPoint, TState#, TRigidBody
 from Github_pages_test_repo.utils import utils
@@ -41,15 +42,18 @@ class RigidBody:
 
     """
 
-    # def __init__(self, 
-    #              mass: TNum,
-    #              moment: TNum,
-    #              shape: list[TPoint,],# ...],
-    #              initial_state: TState = (0., 0., 0., 0., 0., 0.,),
-    #              ) -> None:
-
     def __init__(self,
+                 mass: TNum,
+                 moment: TNum,
+                 shape: list[TPoint,],# ...],
+                 initial_state: TState = (0., 0., 0., 0., 0., 0.,),
                  ) -> None:
+        self.mass = mass
+        self.moment = moment
+        self.shape = shape
+        self.initial_state = initial_state
+    # def __init__(self,
+    #              ) -> None:
         """
         Parameters
         ----------
