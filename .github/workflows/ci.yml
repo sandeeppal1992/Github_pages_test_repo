@@ -35,7 +35,8 @@ jobs:
       - name: Setup Zulu OpenJdk
         uses: actions/setup-java@v3
         with:
-          distribution: 'zulu' # See 'Supported distributions' for available options  
+          #distribution: 'zulu' # See 'Supported distributions' for available options
+          distribution: 'oracle'
           java-version: '17'
       - name: Execute puml file and generate UML
         run: |
