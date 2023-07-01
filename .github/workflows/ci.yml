@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Set up Python 3.9.16
+      - name: Set up Python 3.10.12
         uses: actions/setup-python@v1
         with:
           #python-version: 3.9.16
@@ -35,5 +35,5 @@ jobs:
               git add *.html
               git add *.xls
               git add assets/*
-              git commit -m 'Added pytest-html and excel' 
+              git commit -m 'Added pytest-html and excel'
               git push origin Project_stub
