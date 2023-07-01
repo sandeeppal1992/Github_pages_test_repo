@@ -41,14 +41,19 @@ jobs:
         run:  |
               ls
               python -m generate_puml
-              ls
-              cd rigid_bodies_uml
-              ls
       - name: Setup Zulu OpenJdk
         uses: actions/setup-java@v3
         with:
           distribution: 'zulu' # See 'Supported distributions' for available options
           java-version: '17'
-      - run: java -version
+      - name: Execute puml file and generate UML
+        run: |
+             java -version
+             cd rigid_bodies_uml
+             java -jar plantuml.jar -verbose domain.puml
+             ls
+             cd ..
+             ls
+
 
 
