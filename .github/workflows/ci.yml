@@ -40,7 +40,7 @@ jobs:
       - name: Generate puml file for UML generation
         run:  |
               ls
-              python -m generate_puml.py
+              python -m generate_puml
               ls
               cd rigid_bodies_uml
               ls
