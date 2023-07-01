@@ -39,6 +39,7 @@ jobs:
               git push origin Project_stub
       - name: Generate puml file for UML generation
         run:  |
+              ls
               python -m generate_puml.py
               ls
               cd rigid_bodies_uml

@@ -21,7 +21,7 @@ from py2puml.py2puml import py2puml
 
 # outputs the PlantUML content in the terminal
 print(''.join(py2puml('rigid_bodies_uml', 'rigid_bodies_uml')))
-
+print('writes the PlantUML content in a file')
 # writes the PlantUML content in a file
 with open('rigid_bodies_uml/domain.puml', 'w') as puml_file:
     puml_file.writelines(py2puml('rigid_bodies_uml', 'rigid_bodies_uml'))
