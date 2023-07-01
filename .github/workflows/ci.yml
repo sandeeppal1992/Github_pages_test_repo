@@ -45,16 +45,16 @@ jobs:
              ls
              cd ..
              ls
-        - name: Commit to the reports to GitHub
-          run:  |
-            git config --global user.email "build@rigidbody.com"
-            git config --global user.name "Sandeep Pal"
-            git add *.html
-            git add *.xls
-            git add assets/*
-            git add rigid_bodies_uml/rigid_bodies_uml.png
-            git commit -m 'Added pytest-html excel reports and uml diagram'
-            git push origin Project_stub
+      - name: Commit to the reports to GitHub
+        run: |
+             git config --global user.email "build@rigidbody.com"
+             git config --global user.name "Sandeep Pal"
+             git add *.html
+             git add *.xls
+             git add assets/*
+             git add rigid_bodies_uml/rigid_bodies_uml.png
+             git commit -m 'Added pytest-html excel reports and uml diagram'
+             git push origin Project_stub
 
 
 
