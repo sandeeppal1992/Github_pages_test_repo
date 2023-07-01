@@ -8,7 +8,7 @@ on:
     paths:
       - trigger.txt
   pull_request:
-    # Sequence of patterns matched against refs/heads   
+    # Sequence of patterns matched against refs/heads
     branches:    
       - Project_stub
 
@@ -37,3 +37,17 @@ jobs:
               git add assets/*
               git commit -m 'Added pytest-html and excel'
               git push origin Project_stub
+      - name: Generate puml file for UML generation
+        run:  |
+              python -m generate_puml.py
+              ls
+              cd rigid_bodies_uml
+              ls
+      - name: Setup Zulu OpenJdk
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu' # See 'Supported distributions' for available options
+          java-version: '17'
+      - run: java -version
+
+
