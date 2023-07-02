@@ -42,6 +42,7 @@ jobs:
         run: |
              java -version
              cd rigid_bodies_uml
+             pip install graphviz
              java -jar plantuml.jar -verbose domain.puml
              ls
              cd ..
