@@ -43,8 +43,8 @@ jobs:
              java -version
              cd rigid_bodies_uml
              pip install graphviz
-             apt-get update
-             apt-get install graphviz
+             sudo apt-get update
+             sudo apt-get install graphviz
              java -jar plantuml.jar -verbose domain.puml
              ls
              cd ..
