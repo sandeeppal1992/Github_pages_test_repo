@@ -43,6 +43,7 @@ jobs:
              java -version
              cd rigid_bodies_uml
              pip install graphviz
+             ls /opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages
              java -jar plantuml.jar -verbose domain.puml
              ls
              cd ..
