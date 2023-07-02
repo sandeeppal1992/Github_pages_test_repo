@@ -36,8 +36,8 @@ jobs:
         uses: actions/setup-java@v3
         with:
           #distribution: 'zulu' # See 'Supported distributions' for available options
-          distribution: 'oracle'
-          java-version: '17'
+          distribution: 'zulu'
+          java-version: '11'
       - name: Execute puml file and generate UML
         run: |
              java -version
