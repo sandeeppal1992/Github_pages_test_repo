@@ -43,9 +43,8 @@ jobs:
              java -version
              cd rigid_bodies_uml
              pip install graphviz
-             chmod +rwx /opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/graphviz/dot.py
-             ls -l /opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/graphviz
-             export GRAPHVIZ_DOT=/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/graphviz/
+             apt-get update
+             apt-get install graphviz
              java -jar plantuml.jar -verbose domain.puml
              ls
              cd ..
