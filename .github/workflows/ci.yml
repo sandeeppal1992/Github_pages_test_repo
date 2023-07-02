@@ -44,7 +44,7 @@ jobs:
              cd rigid_bodies_uml
              pip install graphviz
              ls /opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/graphviz
-             export GRAPHVIZ_DOT=/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/graphviz/dot
+             export GRAPHVIZ_DOT=/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/graphviz/
              java -jar plantuml.jar -verbose domain.puml
              ls
              cd ..
