@@ -46,9 +46,7 @@ jobs:
              sudo apt-get update
              sudo apt-get install graphviz
              java -jar plantuml.jar -verbose domain.puml
-             ls
              cd ..
-             ls
       - name: Commit to the reports to GitHub
         run: |
              git config --global user.email "build@rigidbody.com"
