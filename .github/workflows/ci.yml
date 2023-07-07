@@ -64,7 +64,8 @@ jobs:
              git add *.xls
              git add assets/*
              git add rigid_bodies_uml/rigid_bodies_uml.png
-             git commit -m 'Added pytest-html excel reports and uml diagram'
+             git add *.zip
+             git commit -m 'Added pytest-html excel reports uml diagram and compressed zip'
              git push origin Project_stub
 
 
