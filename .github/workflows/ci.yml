@@ -47,6 +47,11 @@ jobs:
              sudo apt-get install graphviz
              java -jar plantuml.jar -verbose domain.puml
              cd ..
+      - name: Check Flag in flag.txt and Convert Docstring if required
+        run: |
+             cd rigid_bodies_pyment
+             sh change_docstring.sh
+             cd ..
       - name: Commit to the reports to GitHub
         run: |
              git config --global user.email "build@rigidbody.com"
