@@ -27,7 +27,7 @@ jobs:
               python -m pip install --upgrade pip
               pip install -r requirements.txt
       - name: Test with pytest
-        run: pytest -vv --html=pytest_report.html --excelreport=report.xls
+        run: pytest -vv --html=pytest_report.html --html-report=pytest_html_report.html --excelreport=report.xls
         continue-on-error: true
       - name: Generate puml file for UML generation
         run:  |
@@ -55,7 +55,7 @@ jobs:
              cd ..
       - name: Compress files to a zip 
         run: |
-             zip -r report_uml.zip pytest_report.html report.xls rigid_bodies_uml/rigid_bodies_uml.png
+             zip -r report_uml.zip pytest_report.html pytest_html_report.html report.xls rigid_bodies_uml/rigid_bodies_uml.png
              ls
       - name: Commit to the reports to GitHub
         run: |
