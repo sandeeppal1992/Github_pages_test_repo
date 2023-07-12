@@ -253,10 +253,10 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>pytest_report.html</h1>
-    <p>Report generated on 11-Jul-2023 at 15:48:43 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 12-Jul-2023 at 15:29:05 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Summary</h2>
-    <p>44 tests ran in 0.15 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">43 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>44 tests ran in 0.17 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">42 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">2 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -276,6 +276,15 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="extra" colspan="4">
             <div class="log">def test_get_rotation_matrix():<br/>&gt;       assert rigid.get_rotation_matrix(3) == 0<br/><span class="error">E       TypeError: RigidBody.get_rotation_matrix() takes 1 positional argument but 2 were given</span><br/><br/>rigid_bodies/test_rigid_body.py:21: TypeError<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">rigid_bodies_pyment/test_rigid_body.py::test_get_rotation_matrix</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">def test_get_rotation_matrix():<br/>&gt;       assert rigid.get_rotation_matrix(3) == 0<br/><span class="error">E       TypeError: RigidBody.get_rotation_matrix() takes 1 positional argument but 2 were given</span><br/><br/>rigid_bodies_pyment/test_rigid_body.py:21: TypeError<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
@@ -460,15 +469,6 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">rigid_bodies/test_rigid_body.py::test_plot_results</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">rigid_bodies_pyment/test_rigid_body.py::test_get_rotation_matrix</td>
           <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
