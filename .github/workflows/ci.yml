@@ -8,7 +8,7 @@ on:
     paths:
       - trigger.txt
   pull_request:
-    # Sequence of patterns matched against refs/heads 
+    # Sequence of patterns matched against refs/heads
     branches:    
       - Project_stub
 
