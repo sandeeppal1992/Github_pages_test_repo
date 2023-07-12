@@ -18,8 +18,8 @@ from Github_pages_test_repo.rigid_bodies.rigid_body import RigidBody
 rigid = RigidBody(2.0,3.0,[2.0,3.0],[0., 0., 0., 0., 0., 0.])
 
 def test_get_rotation_matrix():
-    #assert rigid.get_rotation_matrix(3) == 0
-    pass
+    assert rigid.get_rotation_matrix(3) == 0
+    #pass
 
 def test_get_mass():
     #assert RigidBody.RigidBody.get_mass() == TNum
